@@ -3,77 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Đặng Quốc Huy</title>
 
 <style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f5f5f5;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-header{
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
+body{
+font-family:Arial, sans-serif;
+background:#f4f4f4;
+color:#333;
+}
+
+.hero{
+height:100vh;
+background:url('avatar.jpg') center/cover no-repeat;
+position:relative;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.overlay h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+.overlay p{
+font-size:22px;
 }
 
 .container{
-    max-width:900px;
-    margin:auto;
-    padding:20px;
+max-width:1000px;
+margin:auto;
+padding:20px;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    border-radius:15px;
-    margin-top:20px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+background:white;
+padding:25px;
+border-radius:20px;
+margin-top:20px;
+box-shadow:0 3px 15px rgba(0,0,0,0.1);
 }
 
 h2{
-    color:#0d6efd;
+color:#0d6efd;
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 20px;
+margin:10px;
+background:#0d6efd;
+color:white;
+text-decoration:none;
+border-radius:10px;
+}
+
+footer{
+margin-top:30px;
+padding:20px;
+text-align:center;
+background:#0d6efd;
+color:white;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>ĐẶNG QUỐC HUY</h1>
-    <p>Sinh viên Đại học Đại Nam</p>
-</header>
+<section class="hero">
+<div class="overlay">
+<h1>ĐẶNG QUỐC HUY</h1>
+<p>Sinh viên Điều dưỡng - Đại học Đại Nam</p>
+</div>
+</section>
 
 <div class="container">
 
 <div class="card">
-<h2>Giới thiệu</h2>
+<h2>Giới thiệu bản thân</h2>
 <p>
-Xin chào! Tôi là Đặng Quốc Huy, hiện đang học tập tại Đại học Đại Nam.
-Tôi yêu thích công nghệ, học tập, nghiên cứu và khám phá những điều mới.
+Xin chào! Tôi là Đặng Quốc Huy, hiện đang là sinh viên ngành Điều dưỡng tại Đại học Đại Nam.
+Tôi luôn mong muốn học hỏi thêm kiến thức chuyên môn, phát triển bản thân và rèn luyện kỹ năng trong cuộc sống.
 </p>
 </div>
 
 <div class="card">
-<h2>Sở thích</h2>
+<h2>Sở thích & Đam mê</h2>
 <ul>
-<li>Công nghệ</li>
-<li>Điều dưỡng</li>
-<li>Du lịch</li>
-<li>Game</li>
+<li>⚽ Đá bóng</li>
+<li>📚 Học ngành Điều dưỡng</li>
+<li></li>
+<li></li>
 </ul>
 </div>
 
 <div class="card">
-<h2>Liên hệ</h2>
-<p>Facebook: Thêm link Facebook của bạn</p>
-<p>Instagram: Thêm link Instagram của bạn</p>
+<h2>Thông tin liên hệ</h2>
+<p>📱 Số điện thoại: 0961527394</p>
+
+<a class="btn" href="https://www.facebook.com/share/1BJdt7bJ5r/?mibextid=wwXIfr</a>
+
+<a class="btn" href="https://www.instagram.com/dqhyyy?igsh=c2Nib2ZzanVramk3&utm_source=qr</a>
 </div>
 
 </div>
+
+<footer>
+© 2026 Đặng Quốc Huy
+</footer>
 
 </body>
 </html>
