@@ -6,131 +6,173 @@
 <title>Đặng Quốc Huy</title>
 
 <style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f2f4f7;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.header{
-    background:linear-gradient(135deg,#1877f2,#42a5f5);
-    height:220px;
+body{
+font-family:Arial,sans-serif;
+background:#eceff1;
+color:#333;
+}
+
+.cover{
+width:100%;
+height:320px;
+overflow:hidden;
+}
+
+.cover img{
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
 .profile{
-    text-align:center;
-    margin-top:-80px;
+text-align:center;
+margin-top:-90px;
 }
 
 .avatar{
-    width:170px;
-    height:170px;
-    border-radius:50%;
-    object-fit:cover;
-    border:6px solid white;
-    box-shadow:0 3px 15px rgba(0,0,0,0.2);
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
+background:white;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
 }
 
 .name{
-    font-size:32px;
-    font-weight:bold;
-    margin-top:15px;
+font-size:36px;
+font-weight:bold;
+margin-top:15px;
 }
 
 .info{
-    color:#666;
+font-size:18px;
+color:#666;
+margin-top:5px;
 }
 
 .container{
-    max-width:900px;
-    margin:auto;
-    padding:20px;
+max-width:1000px;
+margin:auto;
+padding:20px;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    margin-top:20px;
-    border-radius:18px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+background:white;
+padding:25px;
+margin-top:20px;
+border-radius:20px;
+box-shadow:0 2px 12px rgba(0,0,0,0.08);
 }
 
-h2{
-    color:#1877f2;
+.card h2{
+margin-bottom:15px;
+color:#555;
+}
+
+.card p,
+.card li{
+line-height:1.8;
 }
 
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:10px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
 }
 
 .gallery img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    border-radius:15px;
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
 }
 
 .btn{
-    display:inline-block;
-    background:#1877f2;
-    color:white;
-    text-decoration:none;
-    padding:12px 18px;
-    border-radius:10px;
-    margin:5px;
+display:inline-block;
+padding:12px 20px;
+background:#616161;
+color:white;
+text-decoration:none;
+border-radius:10px;
+margin:5px;
+}
+
+.btn:hover{
+background:#424242;
 }
 
 footer{
-    text-align:center;
-    padding:20px;
-    margin-top:30px;
-    background:#1877f2;
-    color:white;
+margin-top:30px;
+background:#616161;
+color:white;
+text-align:center;
+padding:20px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
-<div class="header"></div>
+<div class="cover">
+<img src="cover.jpeg" alt="Ảnh bìa">
+</div>
 
 <div class="profile">
-    <img src="avatar.JPG" class="avatar">
-    <div class="name">Đặng Quốc Huy</div>
-    <div class="info">Sinh viên Đại học Đại Nam</div>
+<img src="avatar.JPG" class="avatar" alt="Ảnh đại diện">
+
+<div class="name">
+Đặng Quốc Huy
+</div>
+
+<div class="info">
+Sinh viên Đại học Đại Nam
+</div>
 </div>
 
 <div class="container">
 
 <div class="card">
 <h2>Giới thiệu bản thân</h2>
+
 <p>
-Xin chào! Tôi là Huy, sinh năm 2003, hiện đang học tại Đại học Đại Nam.
-Tôi luôn cố gắng học tập, rèn luyện bản thân.
+Xin chào! Tôi là Huy, sinh năm 2003, hiện đang học tập tại Đại học Đại Nam.
+Tôi luôn cố gắng học hỏi, rèn luyện kỹ năng chuyên môn và phát triển bản thân trong lĩnh vực Điều dưỡng.
 </p>
+
 </div>
 
 <div class="card">
 <h2>Đam mê & Sở thích</h2>
+
 <ul>
 <li>⚽ Đá bóng</li>
-<li>🏍️ Đi phượt và khám phá những vùng đất mới</li>
-<li>🏥 Học tập ngành Điều Dưỡng</li>
-<li>🌱 Phát triển bản thân</li>
+<li>🏍️ Đi phượt và khám phá vùng đất mới</li>
+<li>🏥 Đang học ngành Điều dưỡng</li>
+<li>🎣 Thích Câu Cá</li>
 </ul>
+
 </div>
 
 <div class="card">
 <h2>Khoảnh khắc cá nhân</h2>
 
 <div class="gallery">
-<img src="avatar.JPG">
-<img src="anh1.jpge">
-<img src="anh2.jpge">
-<img src="anh3.jpge">
+
+<img src="anh1.jpeg">
+
+<img src="anh2.jpeg">
+
+<img src="anh3.jpeg">
+
 </div>
 
 </div>
@@ -140,16 +182,20 @@ Tôi luôn cố gắng học tập, rèn luyện bản thân.
 
 <p>📱 0961527394</p>
 
-<a class="btn" href="https://facebook.com/">Facebook</a>
+<a href="https://facebook.com/" class="btn">
+Facebook
+</a>
 
-<a class="btn" href="https://instagram.com/">Instagram</a>
+<a href="https://instagram.com/" class="btn">
+Instagram
+</a>
 
 </div>
 
 </div>
 
 <footer>
-© Đặng Quốc Huy
+© 2026 Đặng Quốc Huy
 </footer>
 
 </body>
